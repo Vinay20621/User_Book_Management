@@ -13,11 +13,11 @@ const auth =require('./middlewear/auth')
 const app=express()
 // cors is used to communicate between frontent and backend
 app.use(cors(
-    // {
-    //     origin:["https://frontent.onrender.com"],
-    //     methods:["POST","GET"],
-    //     credentials:true
-    // }
+    {
+        origin:["https://user-book-management-project.onrender.com"],
+        methods:["POST","GET"],
+        credentials:true
+    }
 ))
 
 app.use(express.json())
